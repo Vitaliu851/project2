@@ -9,6 +9,7 @@ services:
   watchtowe:
     image: containrrr/watchtower
     environment:
+      - DOCKER_API_VERSION=1.40
       - WATCHTOWER_POLL_INTERVAL=60 # Poll every 60 seconds
       - WATCHTOWER_LABEL_ENABLE=true
     volumes:
